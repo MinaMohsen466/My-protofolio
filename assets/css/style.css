@@ -202,6 +202,9 @@ section.proj > div > div button:nth-child(3) a{
 
 
 @media (max-width:600px) {
+    *, body, ::before, ::after{
+        font-size: 9px;
+    }
     section.proj{
         height: calc(400*6px);
     }
