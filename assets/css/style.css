@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Alegreya', serif;
     font-family: 'Dhurjati', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
 }
 :root{
     --mainColor: #039195;
@@ -72,7 +73,7 @@ header div h2{
 }
 @keyframes write{
     to{
-        width:26rem;
+        width:27rem;
     }
 }
 header div p{
@@ -94,6 +95,13 @@ header div button:hover{
     color: black;
     background-color: white;
     cursor: pointer;
+}
+.proto_label{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--mainColor);
+    text-shadow: 0px 2px 5px black;
 }
 section.proj{
     width: 80%;
@@ -146,15 +154,73 @@ section.proj > div > div button:nth-child(3) a{
     text-decoration: none;
     cursor: pointer;
 }
+.contact_me{
+    width: 80%;
+    height: 250px;
+    margin: var(--mainMargin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact_me >div{
+    width: calc(92% / 4);
+    height: 90%;
+    background-color: black;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0px 1px 5px black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact_me i{
+    font-size: 3rem;
+}
+.contact_me h3{
+    font-size: 1.5rem;
+}
+.contact_me h4{
+    font-size: 1rem;
+}
+.contact_me h4.phone a,
+.contact_me h4.Gmail a{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.contact_me h4 a i{
+    font-size: 1rem;
+    margin-right: 1.1rem;
+    color: black;
+}
+
+
+
+
 
 @media (max-width:600px) {
+    section.proj{
+        height: calc(400*6px);
+    }
     section.proj > div{
         width: 100%;
         height: calc(92% / 6);
         margin-bottom: 2rem;
     }
-    section.proj{
-        height: 2400px;
+    .contact_me{
+        width: 80%;
+        height: 300px;
+        justify-content: space-between;
+    }
+    .contact_me >div{
+        width: calc(92% / 2);
+        height: calc(90% / 2);
+    }
+    .contact_me h4.Gmail a{
+    font-size: .7rem;
     }
 }
 @media (min-width:601px) and (max-width:992px)  {
@@ -182,8 +248,15 @@ section.proj > div > div button:nth-child(3) a{
     header div{
         padding: 0 3rem;
     }
+    .contact_me{
+        width: 80%;
+        height: 150px;
+    }
+    .contact_me h4.Gmail a{
+    font-size: .7rem;
+    }
 }
-@media (min-width:993px) {
+@media (min-width:993px) and (max-width: 1500px) {
     *, body, ::before, ::after{
         font-size: 15.5px;
     }
