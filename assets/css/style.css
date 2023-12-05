@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 11px;
+    font-size: 8px;
 }
 body{
     font-family: 'Alegreya', serif;
@@ -159,7 +159,7 @@ section.proj > div > div button:nth-child(3) a{
 }
 @media (min-width:601px) and (max-width:992px)  {
     *, body, ::before, ::after{
-        font-size: 15px;
+        font-size: 14px;
     }
     section.proj > div{
         width: 48%;
@@ -184,6 +184,9 @@ section.proj > div > div button:nth-child(3) a{
     }
 }
 @media (min-width:993px) {
+    *, body, ::before, ::after{
+        font-size: 15.5px;
+    }
     nav ul li a{
         font-size: 1.5rem;
     }
