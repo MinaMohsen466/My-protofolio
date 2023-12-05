@@ -65,6 +65,7 @@ header div h2{
     font-size: 5rem;
     border-right: .2rem solid white;
     width: 0rem;
+    height: 4rem;
     overflow: hidden;
     text-wrap: nowrap;
     animation: write 9s infinite;
