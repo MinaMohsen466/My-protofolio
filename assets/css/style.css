@@ -62,13 +62,13 @@ header div h1 , h2{
     font-size: 5rem;
 }
 header div h2{
-    font-size: 5rem;
+    font-size: 4rem;
     border-right: .2rem solid white;
     width: 0rem;
     height: 4rem;
     overflow: hidden;
-    text-wrap: nowrap;
-    animation: write 9s infinite;
+    animation: write 6s infinite alternate;
+    margin: 1rem 0;
 }
 @keyframes write{
     to{
@@ -146,7 +146,7 @@ section.proj > div > div button:nth-child(3) a{
     text-decoration: none;
     cursor: pointer;
 }
-footer{
+.footer{
     width: 100%;
     height: 6rem;
     background-color: var(--mainColor);
@@ -156,19 +156,20 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-footer h2{
+.footer h2{
     font-size: 2rem;
 }
-footer p{
+.footer p{
     font-size: 1.5rem;
 }
 @media (max-width:600px) {
     section.proj > div{
         width: 100%;
+        height: calc(92% / 6);
         margin-bottom: 2rem;
     }
-    footer{
-        display: none;
+    section.proj{
+        height: 2400px;
     }
 }
 @media (min-width:601px) and (max-width:992px)  {
@@ -177,8 +178,12 @@ footer p{
     }
     section.proj > div{
         width: 48%;
+        height: calc(96% / 3);
         margin-bottom: 2rem;
         margin-right: 2%;
+    }
+    section.proj{
+        height: calc(400 * 3px);
     }
     nav ul li a{
         font-size: 2.1rem;
