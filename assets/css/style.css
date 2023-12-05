@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 8px;
+    font-size: 10px;
 }
 body{
     font-family: 'Alegreya', serif;
@@ -72,7 +72,7 @@ header div h2{
 }
 @keyframes write{
     to{
-        width:24rem;
+        width:26rem;
     }
 }
 header div p{
@@ -83,7 +83,7 @@ header div button{
     width: 10rem;
     height: 3rem;
     padding: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 2rem;
     border: none;
     font-weight: bolder;
