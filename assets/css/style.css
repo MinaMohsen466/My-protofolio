@@ -211,7 +211,7 @@ section.proj > div > div button:nth-child(3) a{
 
 @media (max-width:600px) {
     *, body, ::before, ::after{
-        font-size: 10px;
+        font-size: 11px;
     }
     section.proj{
         height: calc(400*6px);
@@ -236,7 +236,7 @@ section.proj > div > div button:nth-child(3) a{
 }
 @media (min-width:601px) and (max-width:992px)  {
     *, body, ::before, ::after{
-        font-size: 14px;
+        font-size: 13px;
     }
     section.proj > div{
         width: 48%;
