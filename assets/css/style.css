@@ -91,6 +91,14 @@ header div button{
     background-color: var(--mainColor);
     color: white;
 }
+header div button a{
+    color: white;
+    text-decoration: none;
+}
+header div button a:hover{
+    color: black;
+    background-color: white;
+}
 header div button:hover{
     color: black;
     background-color: white;
@@ -203,7 +211,7 @@ section.proj > div > div button:nth-child(3) a{
 
 @media (max-width:600px) {
     *, body, ::before, ::after{
-        font-size: 9px;
+        font-size: 10px;
     }
     section.proj{
         height: calc(400*6px);
