@@ -280,7 +280,11 @@ section.proj > div > div button:nth-child(3) a{
     .proto_label{
         text-shadow: 0px .5px 2px black;
     }
-}
+    .arrow_up{
+        bottom: 2rem;
+        right: 1rem;
+    }
+}    
 @media (min-width:601px) and (max-width:992px)  {
     *, body, ::before, ::after{
         font-size: 13px;
@@ -315,6 +319,10 @@ section.proj > div > div button:nth-child(3) a{
     }
     .proto_label{
         text-shadow: 0px 1px 3px black;
+    }
+    .arrow_up{
+        bottom: 2rem;
+        right: 1.9rem;
     }
 }
 @media (min-width:993px) and (max-width: 1500px) {
